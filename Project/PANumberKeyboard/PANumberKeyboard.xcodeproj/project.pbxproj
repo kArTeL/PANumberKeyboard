@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14716DBD1FA13FEF0018DCE4 /* back_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14716DB51FA12C850018DCE4 /* back_icon.png */; };
+		14716DBE1FA13FF20018DCE4 /* back_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14716DB61FA12C860018DCE4 /* back_icon@3x.png */; };
+		14716DBF1FA13FF60018DCE4 /* back_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14716DB41FA12C850018DCE4 /* back_icon@2x.png */; };
+		14716DCF1FA1440C0018DCE4 /* keyboard_down_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14716DCC1FA1440A0018DCE4 /* keyboard_down_icon.png */; };
+		14716DD01FA1440E0018DCE4 /* keyboard_down_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14716DCD1FA1440A0018DCE4 /* keyboard_down_icon@2x.png */; };
+		14716DD11FA144100018DCE4 /* keyboard_down_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14716DCE1FA1440A0018DCE4 /* keyboard_down_icon@3x.png */; };
 		C55D3D401C7B30D30004E470 /* PADecimalKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D3D3B1C7B30D30004E470 /* PADecimalKeyboardButton.swift */; };
 		C55D3D411C7B30D30004E470 /* PANumberKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D3D3C1C7B30D30004E470 /* PANumberKeyboardViewController.swift */; };
 		C55D3D421C7B30D30004E470 /* BackspaceButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C55D3D3E1C7B30D30004E470 /* BackspaceButton@2x.png */; };
@@ -27,6 +33,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14716DB41FA12C850018DCE4 /* back_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_icon@2x.png"; sourceTree = "<group>"; };
+		14716DB51FA12C850018DCE4 /* back_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_icon.png; sourceTree = "<group>"; };
+		14716DB61FA12C860018DCE4 /* back_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_icon@3x.png"; sourceTree = "<group>"; };
+		14716DCC1FA1440A0018DCE4 /* keyboard_down_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard_down_icon.png; sourceTree = "<group>"; };
+		14716DCD1FA1440A0018DCE4 /* keyboard_down_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_down_icon@2x.png"; sourceTree = "<group>"; };
+		14716DCE1FA1440A0018DCE4 /* keyboard_down_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_down_icon@3x.png"; sourceTree = "<group>"; };
 		C55D3D3B1C7B30D30004E470 /* PADecimalKeyboardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PADecimalKeyboardButton.swift; sourceTree = "<group>"; };
 		C55D3D3C1C7B30D30004E470 /* PANumberKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PANumberKeyboardViewController.swift; sourceTree = "<group>"; };
 		C55D3D3E1C7B30D30004E470 /* BackspaceButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackspaceButton@2x.png"; sourceTree = "<group>"; };
@@ -71,6 +83,12 @@
 		C55D3D3D1C7B30D30004E470 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				14716DCC1FA1440A0018DCE4 /* keyboard_down_icon.png */,
+				14716DCD1FA1440A0018DCE4 /* keyboard_down_icon@2x.png */,
+				14716DCE1FA1440A0018DCE4 /* keyboard_down_icon@3x.png */,
+				14716DB51FA12C850018DCE4 /* back_icon.png */,
+				14716DB41FA12C850018DCE4 /* back_icon@2x.png */,
+				14716DB61FA12C860018DCE4 /* back_icon@3x.png */,
 				C55D3D3E1C7B30D30004E470 /* BackspaceButton@2x.png */,
 				C55D3D3F1C7B30D30004E470 /* PANumberKeyboardViewController.xib */,
 			);
@@ -210,6 +228,12 @@
 			files = (
 				C55D3D421C7B30D30004E470 /* BackspaceButton@2x.png in Resources */,
 				C55D3D431C7B30D30004E470 /* PANumberKeyboardViewController.xib in Resources */,
+				14716DBE1FA13FF20018DCE4 /* back_icon@3x.png in Resources */,
+				14716DBF1FA13FF60018DCE4 /* back_icon@2x.png in Resources */,
+				14716DBD1FA13FEF0018DCE4 /* back_icon.png in Resources */,
+				14716DCF1FA1440C0018DCE4 /* keyboard_down_icon.png in Resources */,
+				14716DD01FA1440E0018DCE4 /* keyboard_down_icon@2x.png in Resources */,
+				14716DD11FA144100018DCE4 /* keyboard_down_icon@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +317,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -333,6 +358,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -354,6 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.popkov.PANumberKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -371,6 +398,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.popkov.PANumberKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -381,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.popkov.PANumberKeyboardTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -391,6 +420,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.popkov.PANumberKeyboardTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

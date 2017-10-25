@@ -30,8 +30,8 @@ class ViewController: UIViewController, UITextFieldDelegate
         //        self.keyboardVC.setSelectedReturnButtonBackgroundColor(UIColor.whiteColor())
         //        self.keyboardVC.setSelectedBackspaceButtonBackgroundColor(UIColor.blackColor())
         
-        self.keyboardVC.numberKeyboardReturnButton.setTitle("Next", forState: .Normal)
-        
+        self.keyboardVC.numberKeyboardReturnButton.setTitle("Tender", for: .normal)
+        self.keyboardVC.textFont = UIFont(name: "Arial", size: 30)!
 //        for button in self.keyboardVC.allButtons
 //        {
 //            let layer = button.layer
@@ -41,21 +41,42 @@ class ViewController: UIViewController, UITextFieldDelegate
         
         self.keyboardVC.returnAction = { (Void) -> Void in
             // TODO: handle return button pressed
+            //self.textField.resignFirstResponder()
+            
         }
         
+        self.keyboardVC.dismissAction = { (Void) -> Void in
+            // TODO: handle return button pressed
+            self.textField.resignFirstResponder()
+            
+        }
         self.keyboardVC.backspaceAction = { (Void) -> Void in
             // TODO: handle backspace button pressed
         }
         
         self.keyboardVC.newTextAction = { (text:String) -> Void in
             // TODO: handle insert new text
+            
         }
         
         textField.inputView = self.keyboardVC.numberKeyboardView
+        if #available(iOS 9.0, *) {
+            self.textField.inputAssistantItem.leadingBarButtonGroups.removeAll()
+        } else {
+            // Fallback on earlier versions
+        }
+        if #available(iOS 9.0, *) {
+            self.textField.inputAssistantItem.trailingBarButtonGroups.removeAll()
+        } else {
+            // Fallback on earlier versions
+        }
         textField.delegate = self
     }
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool
+    @IBAction func dismissButtonPressed(_ sender: Any) {
+        self.keyboardVC .dismiss(animated: true, completion: nil)
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
     {
         print(range, terminator: "")
         return true;

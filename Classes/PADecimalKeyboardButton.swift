@@ -10,8 +10,9 @@ import UIKit
 
 enum ButtonActionType:Int
 {
-    case Backspace
-    case ReturnButton
+    case backspace
+    case returnButton
+    case dismiss
 }
 
 protocol PADecimalKeyboardButtonProtocol
@@ -22,6 +23,17 @@ protocol PADecimalKeyboardButtonProtocol
 
 class PADecimalKeyboardButton: UIButton, PADecimalKeyboardButtonProtocol
 {
+    override func awakeFromNib() {
+        self.layer.cornerRadius = 9.0
+        self.clipsToBounds = true
+//        self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+//        self.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+//        self.layer.shadowOpacity = 1.0
+//        self.layer.shadowRadius = 9.0
+//        self.layer.masksToBounds = true
+        //self.layer.cornerRadius = 4.0
+    }
+    
     func theButtonText() -> String? {
         return nil
     }
@@ -39,6 +51,13 @@ class PADecimalKeyboardZeroButton: PADecimalKeyboardTextButton
 {
     override func theButtonText() -> String? {
         return "0"
+    }
+}
+
+class PADecimalKeyboardDoubleZeroButton: PADecimalKeyboardTextButton
+{
+    override func theButtonText() -> String? {
+        return "00"
     }
 }
 
@@ -120,19 +139,19 @@ class PADecimalKeyboardDotButton: PADecimalKeyboardTextButton
             
             if decimalPointAsComma == true {
                 privateDotText = ","
-                configureButtonTitle(privateDotText)
+                configureButtonTitle(title: privateDotText)
             } else {
                 privateDotText = "."
-                configureButtonTitle(privateDotText)
+                configureButtonTitle(title: privateDotText)
             }
         }
     }
     
     private func configureButtonTitle(title:String)
     {
-        self.setTitle(title, forState: .Selected)
-        self.setTitle(title, forState: .Highlighted)
-        self.setTitle(title, forState: .Normal)
+        self.setTitle(title, for: .selected)
+        self.setTitle(title, for: .highlighted)
+        self.setTitle(title, for: .normal)
     }
     
     override func theButtonText() -> String? {
@@ -143,13 +162,20 @@ class PADecimalKeyboardDotButton: PADecimalKeyboardTextButton
 class PADecimalKeyboardBackspaceButton: PADecimalKeyboardButton
 {
     override func theButtonActionType() -> ButtonActionType? {
-        return ButtonActionType.Backspace
+        return ButtonActionType.backspace
+    }
+}
+
+class PADecimalKeyboardDismissButton: PADecimalKeyboardButton
+{
+    override func theButtonActionType() -> ButtonActionType? {
+        return ButtonActionType.dismiss
     }
 }
 
 class PADecimalKeyboardReturnButtonButton: PADecimalKeyboardButton
 {
     override func theButtonActionType() -> ButtonActionType? {
-        return ButtonActionType.ReturnButton
+        return ButtonActionType.returnButton
     }
 }

@@ -166,6 +166,7 @@
 				TargetAttributes = {
 					C5EDD7691C7B1D8A00B6E925 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = WBJ5G347V7;
 					};
 				};
 			};
@@ -342,11 +343,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WBJ5G347V7;
 				INFOPLIST_FILE = PANumberKeyboardExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.popkov.PANumberKeyboardExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neil.PANumberKeyboardExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -354,11 +357,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WBJ5G347V7;
 				INFOPLIST_FILE = PANumberKeyboardExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.popkov.PANumberKeyboardExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neil.PANumberKeyboardExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

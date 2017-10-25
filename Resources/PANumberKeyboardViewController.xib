@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -13,21 +17,21 @@
                 <viewControllerLayoutGuide type="bottom" id="kYC-TJ-jW3"/>
             </layoutGuides>
             <view key="view" contentMode="scaleToFill" id="KGx-pp-rJA">
-                <rect key="frame" x="0.0" y="0.0" width="271" height="208"/>
+                <rect key="frame" x="0.0" y="0.0" width="1118" height="500"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VnX-lY-IBQ">
-                        <rect key="frame" x="0.0" y="0.0" width="271" height="208"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1118" height="500"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPD-1L-t4f" customClass="PADecimalKeyboardOneButton" customModule="PANumberKeyboard" customModuleProvider="target">
-                                <rect key="frame" x="2" y="2" width="65" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="210" y="10" width="141" height="112.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="9JM-Sg-oXg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="1">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.24313725489999999" green="0.27058823529999998" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -35,171 +39,186 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="efQ-bK-Jex"/>
+                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="9yg-LW-PpV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FET-9v-qNS" customClass="PADecimalKeyboardTwoButton" customModule="PANumberKeyboard" customModuleProvider="target">
-                                <rect key="frame" x="69" y="2" width="66" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="366" y="10" width="141.5" height="113"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="2">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.24313725489999999" green="0.27058823529999998" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="frf-xD-B86"/>
+                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="6fH-PC-eHC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKC-1x-J1M" customClass="PADecimalKeyboardThreeButton" customModule="PANumberKeyboard" customModuleProvider="target">
-                                <rect key="frame" x="137" y="2" width="65" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="522.5" y="10" width="140.5" height="112.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="3">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.24313725489999999" green="0.27058823529999998" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="KGF-eC-PwP"/>
+                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="4e9-x5-Omk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlP-ty-HIv" customClass="PADecimalKeyboardFourButton" customModule="PANumberKeyboard" customModuleProvider="target">
-                                <rect key="frame" x="2" y="54" width="65" height="49"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="210" y="132.5" width="141" height="112.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="4">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.24313725489999999" green="0.27058823529999998" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="PXx-4H-u4Y"/>
+                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="opK-UI-6Aa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5h-pj-ACY" customClass="PADecimalKeyboardFiveButton" customModule="PANumberKeyboard" customModuleProvider="target">
-                                <rect key="frame" x="69" y="54" width="66" height="49"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="366" y="133" width="141.5" height="112"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="5">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.24313725489999999" green="0.27058823529999998" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="mNO-mo-nrf"/>
+                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="F3A-OM-ouJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQ5-s4-rat" customClass="PADecimalKeyboardSixButton" customModule="PANumberKeyboard" customModuleProvider="target">
-                                <rect key="frame" x="137" y="54" width="65" height="49"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="522.5" y="132.5" width="140.5" height="112.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="6">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.24313725489999999" green="0.27058823529999998" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="lKp-as-8GE"/>
+                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="RXe-ns-4WL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="107" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVS-xx-iCR" customClass="PADecimalKeyboardSevenButton" customModule="PANumberKeyboard" customModuleProvider="target">
-                                <rect key="frame" x="2" y="105" width="65" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="210" y="255" width="141" height="112.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="7">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.24313725489999999" green="0.27058823529999998" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="uNt-WU-YkF"/>
+                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="pWS-Pe-qbd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="108" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRS-na-wXy" customClass="PADecimalKeyboardEightButton" customModule="PANumberKeyboard" customModuleProvider="target">
-                                <rect key="frame" x="69" y="105" width="66" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="366" y="255" width="141.5" height="113"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="8">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.24313725489999999" green="0.27058823529999998" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="lhq-DT-lnF"/>
+                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="dLr-tc-idi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="109" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlr-Zy-b8F" customClass="PADecimalKeyboardNineButton" customModule="PANumberKeyboard" customModuleProvider="target">
-                                <rect key="frame" x="137" y="105" width="65" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="522.5" y="255" width="140.5" height="112.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="9">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.24313725489999999" green="0.27058823529999998" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="G1G-1o-gbm"/>
+                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="RWR-ep-lT5"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHv-zs-CCd" customClass="PADecimalKeyboardZeroButton" customModule="PANumberKeyboard" customModuleProvider="target">
-                                <rect key="frame" x="2" y="157" width="133" height="49"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHv-zs-CCd" customClass="PADecimalKeyboardDoubleZeroButton" customModule="PANumberKeyboard" customModuleProvider="target">
+                                <rect key="frame" x="210" y="377.5" width="297.5" height="112.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="0">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="00">
+                                    <color key="titleColor" red="0.24313725489999999" green="0.27058823529999998" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="jwI-Ox-Ct3"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" tag="112" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVE-eJ-mQ5" userLabel="Dot" customClass="PADecimalKeyboardDotButton" customModule="PANumberKeyboard" customModuleProvider="target">
-                                <rect key="frame" x="137" y="157" width="65" height="49"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" tag="112" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVE-eJ-mQ5" userLabel="Dot" customClass="PADecimalKeyboardZeroButton" customModule="PANumberKeyboard" customModuleProvider="target">
+                                <rect key="frame" x="522.5" y="377.5" width="140.5" height="112.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title=".">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="0.24313725489999999" green="0.27058823529999998" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="azo-TV-pqz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="113" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9g-KA-qYZ" userLabel="Backspace" customClass="PADecimalKeyboardBackspaceButton" customModule="PANumberKeyboard" customModuleProvider="target">
-                                <rect key="frame" x="204" y="2" width="65" height="101"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="728" y="10" width="180" height="112.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="jux-s9-ORH"/>
+                                </constraints>
                                 <connections>
-                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="pQk-jD-sGt"/>
+                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="G63-fT-xF0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="114" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59c-wK-qJ0" customClass="PADecimalKeyboardReturnButtonButton" customModule="PANumberKeyboard" customModuleProvider="target">
-                                <rect key="frame" x="204" y="105" width="65" height="101"/>
-                                <color key="backgroundColor" red="0.35686274509999999" green="0.58431372550000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Enter">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" tag="114" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59c-wK-qJ0" customClass="PADecimalKeyboardDismissButton" customModule="PANumberKeyboard" customModuleProvider="target">
+                                <rect key="frame" x="728" y="377.5" width="180" height="112.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="7B1-cf-IU4"/>
+                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="ChD-rR-oja"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackspaceButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="uZh-ou-XTj">
-                                <rect key="frame" x="220" y="37" width="32" height="32"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="uZh-ou-XTj">
+                                <rect key="frame" x="802" y="56" width="32" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="32" id="IV7-IP-waM"/>
-                                    <constraint firstAttribute="height" constant="32" id="hMe-M6-7he"/>
+                                    <constraint firstAttribute="height" constant="21" id="hMe-M6-7he"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C21-lp-lrS" customClass="PADecimalKeyboardZeroButton" customModule="PANumberKeyboard" customModuleProvider="target">
-                                <rect key="frame" x="2" y="157" width="200" height="49"/>
+                            <button opaque="NO" tag="114" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wr-r0-BxO" customClass="PADecimalKeyboardReturnButtonButton" customModule="PANumberKeyboard" customModuleProvider="target">
+                                <rect key="frame" x="728" y="132.5" width="180" height="235"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="0">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Cobrar">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="ePj-29-zSL"/>
+                                    <action selector="buttonPressedAction:" destination="rku-t0-oXi" eventType="touchUpInside" id="v0u-X7-cYI"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keyboard_down_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="bz0-mx-ztb">
+                                <rect key="frame" x="788" y="414" width="60" height="40"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="gBx-pd-izd"/>
+                                    <constraint firstAttribute="height" constant="40" id="m3l-L4-c1v"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.76507711410522461" green="0.78019404411315918" blue="0.7961113452911377" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="bVE-eJ-mQ5" firstAttribute="width" secondItem="Tlr-Zy-b8F" secondAttribute="width" id="2aR-I5-Ytx"/>
+                            <constraint firstItem="1wr-r0-BxO" firstAttribute="centerX" secondItem="F9g-KA-qYZ" secondAttribute="centerX" id="2eW-1g-L6B"/>
                             <constraint firstItem="Tlr-Zy-b8F" firstAttribute="centerX" secondItem="XKC-1x-J1M" secondAttribute="centerX" id="35u-3h-Qsr"/>
                             <constraint firstItem="kRS-na-wXy" firstAttribute="height" secondItem="QPD-1L-t4f" secondAttribute="height" id="3G8-fm-NrR"/>
-                            <constraint firstItem="nVS-xx-iCR" firstAttribute="top" secondItem="XlP-ty-HIv" secondAttribute="bottom" constant="2" id="4CO-Bu-2py"/>
+                            <constraint firstItem="nVS-xx-iCR" firstAttribute="top" secondItem="XlP-ty-HIv" secondAttribute="bottom" constant="10" id="4CO-Bu-2py"/>
                             <constraint firstItem="i5h-pj-ACY" firstAttribute="centerX" secondItem="FET-9v-qNS" secondAttribute="centerX" id="52L-ft-KAh"/>
+                            <constraint firstItem="1wr-r0-BxO" firstAttribute="top" secondItem="F9g-KA-qYZ" secondAttribute="bottom" constant="10" id="55d-ZT-sCD"/>
                             <constraint firstItem="hHv-zs-CCd" firstAttribute="height" secondItem="QPD-1L-t4f" secondAttribute="height" id="59P-nw-LOe"/>
                             <constraint firstItem="F9g-KA-qYZ" firstAttribute="height" secondItem="XKC-1x-J1M" secondAttribute="height" id="5lZ-kc-W2p"/>
-                            <constraint firstAttribute="bottom" secondItem="59c-wK-qJ0" secondAttribute="bottom" constant="2" id="6Gp-Xn-x1C"/>
-                            <constraint firstItem="F9g-KA-qYZ" firstAttribute="width" secondItem="QPD-1L-t4f" secondAttribute="width" id="7wP-2e-HdN"/>
-                            <constraint firstItem="F9g-KA-qYZ" firstAttribute="top" secondItem="VnX-lY-IBQ" secondAttribute="top" constant="2" id="8M5-vD-z3W"/>
+                            <constraint firstAttribute="bottom" secondItem="59c-wK-qJ0" secondAttribute="bottom" constant="10" id="6Gp-Xn-x1C"/>
+                            <constraint firstItem="bz0-mx-ztb" firstAttribute="centerY" secondItem="59c-wK-qJ0" secondAttribute="centerY" id="7IZ-fS-Jzf"/>
+                            <constraint firstItem="F9g-KA-qYZ" firstAttribute="top" secondItem="VnX-lY-IBQ" secondAttribute="top" constant="10" id="8M5-vD-z3W"/>
                             <constraint firstItem="XKC-1x-J1M" firstAttribute="centerY" secondItem="QPD-1L-t4f" secondAttribute="centerY" id="AKI-cL-2Tr"/>
-                            <constraint firstItem="bVE-eJ-mQ5" firstAttribute="leading" secondItem="hHv-zs-CCd" secondAttribute="trailing" constant="2" id="Agd-Ob-SVC"/>
+                            <constraint firstItem="59c-wK-qJ0" firstAttribute="top" secondItem="1wr-r0-BxO" secondAttribute="bottom" constant="10" id="Aa7-T7-QAH"/>
+                            <constraint firstItem="bVE-eJ-mQ5" firstAttribute="leading" secondItem="hHv-zs-CCd" secondAttribute="trailing" constant="15" id="Agd-Ob-SVC"/>
                             <constraint firstItem="bVE-eJ-mQ5" firstAttribute="trailing" secondItem="XKC-1x-J1M" secondAttribute="trailing" id="BVE-2F-eG9"/>
-                            <constraint firstItem="hHv-zs-CCd" firstAttribute="top" secondItem="nVS-xx-iCR" secondAttribute="bottom" constant="2" id="CIr-OB-nnA"/>
+                            <constraint firstItem="hHv-zs-CCd" firstAttribute="top" secondItem="nVS-xx-iCR" secondAttribute="bottom" constant="10" id="CIr-OB-nnA"/>
                             <constraint firstItem="Tlr-Zy-b8F" firstAttribute="centerY" secondItem="nVS-xx-iCR" secondAttribute="centerY" id="F3V-jn-QrM"/>
                             <constraint firstItem="tQ5-s4-rat" firstAttribute="centerY" secondItem="XlP-ty-HIv" secondAttribute="centerY" id="F51-zD-HSc"/>
                             <constraint firstItem="59c-wK-qJ0" firstAttribute="centerX" secondItem="F9g-KA-qYZ" secondAttribute="centerX" id="FPN-uK-TuG"/>
@@ -209,25 +228,24 @@
                             <constraint firstItem="59c-wK-qJ0" firstAttribute="height" secondItem="F9g-KA-qYZ" secondAttribute="height" id="Ieg-XB-pHD"/>
                             <constraint firstItem="FET-9v-qNS" firstAttribute="height" secondItem="QPD-1L-t4f" secondAttribute="height" id="Iy0-Il-vpM"/>
                             <constraint firstItem="Tlr-Zy-b8F" firstAttribute="width" secondItem="QPD-1L-t4f" secondAttribute="width" id="NxU-hS-RCt"/>
-                            <constraint firstItem="bVE-eJ-mQ5" firstAttribute="trailing" secondItem="C21-lp-lrS" secondAttribute="trailing" id="OGj-qp-WIU"/>
+                            <constraint firstItem="F9g-KA-qYZ" firstAttribute="height" secondItem="XKC-1x-J1M" secondAttribute="height" id="Opw-Ih-UZN"/>
                             <constraint firstItem="bVE-eJ-mQ5" firstAttribute="width" secondItem="hHv-zs-CCd" secondAttribute="width" id="Q0m-4e-H7t"/>
-                            <constraint firstAttribute="trailing" secondItem="F9g-KA-qYZ" secondAttribute="trailing" constant="2" id="QPT-Qn-pgy"/>
-                            <constraint firstAttribute="bottom" secondItem="hHv-zs-CCd" secondAttribute="bottom" constant="2" id="TX5-5B-HNh"/>
+                            <constraint firstAttribute="trailing" secondItem="F9g-KA-qYZ" secondAttribute="trailing" constant="210" id="QPT-Qn-pgy"/>
+                            <constraint firstAttribute="bottom" secondItem="hHv-zs-CCd" secondAttribute="bottom" constant="10" id="TX5-5B-HNh"/>
                             <constraint firstItem="kRS-na-wXy" firstAttribute="centerY" secondItem="nVS-xx-iCR" secondAttribute="centerY" id="Tpf-Zl-BkZ"/>
-                            <constraint firstItem="FET-9v-qNS" firstAttribute="leading" secondItem="QPD-1L-t4f" secondAttribute="trailing" constant="2" id="TqE-kr-jA1"/>
+                            <constraint firstItem="FET-9v-qNS" firstAttribute="leading" secondItem="QPD-1L-t4f" secondAttribute="trailing" constant="15" id="TqE-kr-jA1"/>
                             <constraint firstItem="tQ5-s4-rat" firstAttribute="width" secondItem="QPD-1L-t4f" secondAttribute="width" id="Ub5-mk-3za"/>
                             <constraint firstItem="59c-wK-qJ0" firstAttribute="width" secondItem="F9g-KA-qYZ" secondAttribute="width" id="Udf-wW-qgF"/>
                             <constraint firstItem="hHv-zs-CCd" firstAttribute="leading" secondItem="QPD-1L-t4f" secondAttribute="leading" id="WBW-4b-8zV"/>
+                            <constraint firstItem="bz0-mx-ztb" firstAttribute="centerX" secondItem="59c-wK-qJ0" secondAttribute="centerX" id="WGh-vt-MfD"/>
                             <constraint firstItem="kRS-na-wXy" firstAttribute="width" secondItem="QPD-1L-t4f" secondAttribute="width" id="WjQ-Hc-DIn"/>
-                            <constraint firstItem="59c-wK-qJ0" firstAttribute="top" secondItem="F9g-KA-qYZ" secondAttribute="bottom" constant="2" id="XO2-fi-9hM"/>
                             <constraint firstItem="nVS-xx-iCR" firstAttribute="width" secondItem="QPD-1L-t4f" secondAttribute="width" id="XiP-i5-XGa"/>
                             <constraint firstItem="FET-9v-qNS" firstAttribute="width" secondItem="QPD-1L-t4f" secondAttribute="width" id="Z5p-rP-qjD"/>
-                            <constraint firstItem="QPD-1L-t4f" firstAttribute="leading" secondItem="VnX-lY-IBQ" secondAttribute="leading" constant="2" id="Zc1-Bc-6Uf"/>
-                            <constraint firstItem="hHv-zs-CCd" firstAttribute="height" secondItem="C21-lp-lrS" secondAttribute="height" id="aJz-dJ-of9"/>
-                            <constraint firstItem="QPD-1L-t4f" firstAttribute="top" secondItem="VnX-lY-IBQ" secondAttribute="top" constant="2" id="dbb-3g-UwB"/>
-                            <constraint firstItem="hHv-zs-CCd" firstAttribute="leading" secondItem="C21-lp-lrS" secondAttribute="leading" id="emv-q7-8SW"/>
+                            <constraint firstItem="QPD-1L-t4f" firstAttribute="leading" secondItem="VnX-lY-IBQ" secondAttribute="leading" constant="210" id="Zc1-Bc-6Uf"/>
+                            <constraint firstItem="1wr-r0-BxO" firstAttribute="width" secondItem="F9g-KA-qYZ" secondAttribute="width" id="Zvm-b4-cui"/>
+                            <constraint firstItem="QPD-1L-t4f" firstAttribute="top" secondItem="VnX-lY-IBQ" secondAttribute="top" constant="10" id="dbb-3g-UwB"/>
                             <constraint firstItem="XKC-1x-J1M" firstAttribute="width" secondItem="QPD-1L-t4f" secondAttribute="width" id="fWj-QH-Xng"/>
-                            <constraint firstItem="F9g-KA-qYZ" firstAttribute="leading" secondItem="XKC-1x-J1M" secondAttribute="trailing" constant="2" id="fmH-Bl-FQy"/>
+                            <constraint firstItem="F9g-KA-qYZ" firstAttribute="leading" secondItem="XKC-1x-J1M" secondAttribute="trailing" constant="65" id="fmH-Bl-FQy"/>
                             <constraint firstItem="i5h-pj-ACY" firstAttribute="centerY" secondItem="XlP-ty-HIv" secondAttribute="centerY" id="gdc-Ec-X5V"/>
                             <constraint firstItem="XlP-ty-HIv" firstAttribute="width" secondItem="QPD-1L-t4f" secondAttribute="width" id="idp-HM-X1F"/>
                             <constraint firstItem="kRS-na-wXy" firstAttribute="centerX" secondItem="FET-9v-qNS" secondAttribute="centerX" id="ikV-EK-opr"/>
@@ -235,29 +253,28 @@
                             <constraint firstItem="F9g-KA-qYZ" firstAttribute="centerY" secondItem="QPD-1L-t4f" secondAttribute="centerY" id="kRa-Oe-hBj"/>
                             <constraint firstItem="XlP-ty-HIv" firstAttribute="height" secondItem="QPD-1L-t4f" secondAttribute="height" id="lNm-dD-h3a"/>
                             <constraint firstItem="bVE-eJ-mQ5" firstAttribute="centerY" secondItem="hHv-zs-CCd" secondAttribute="centerY" id="m9y-Ec-s20"/>
-                            <constraint firstItem="XlP-ty-HIv" firstAttribute="top" secondItem="QPD-1L-t4f" secondAttribute="bottom" constant="2" id="mL1-FW-XA9"/>
+                            <constraint firstItem="XlP-ty-HIv" firstAttribute="top" secondItem="QPD-1L-t4f" secondAttribute="bottom" constant="10" id="mL1-FW-XA9"/>
                             <constraint firstItem="nVS-xx-iCR" firstAttribute="height" secondItem="QPD-1L-t4f" secondAttribute="height" id="mjg-r1-uRN"/>
                             <constraint firstItem="F9g-KA-qYZ" firstAttribute="centerX" secondItem="uZh-ou-XTj" secondAttribute="centerX" id="mzM-TX-yAi"/>
                             <constraint firstItem="FET-9v-qNS" firstAttribute="centerY" secondItem="QPD-1L-t4f" secondAttribute="centerY" id="oG3-Ij-geE"/>
                             <constraint firstItem="XKC-1x-J1M" firstAttribute="height" secondItem="QPD-1L-t4f" secondAttribute="height" id="oeZ-T2-7WQ"/>
-                            <constraint firstItem="XKC-1x-J1M" firstAttribute="leading" secondItem="FET-9v-qNS" secondAttribute="trailing" constant="2" id="pL9-4n-XLB"/>
+                            <constraint firstItem="XKC-1x-J1M" firstAttribute="leading" secondItem="FET-9v-qNS" secondAttribute="trailing" constant="15" id="pL9-4n-XLB"/>
                             <constraint firstItem="tQ5-s4-rat" firstAttribute="centerX" secondItem="XKC-1x-J1M" secondAttribute="centerX" id="ryQ-Jx-bS3"/>
                             <constraint firstItem="i5h-pj-ACY" firstAttribute="height" secondItem="QPD-1L-t4f" secondAttribute="height" id="tEv-Km-zl7"/>
-                            <constraint firstItem="hHv-zs-CCd" firstAttribute="centerY" secondItem="C21-lp-lrS" secondAttribute="centerY" id="vkG-rp-i5e"/>
                             <constraint firstItem="XlP-ty-HIv" firstAttribute="centerX" secondItem="QPD-1L-t4f" secondAttribute="centerX" id="w1t-vo-ZWZ"/>
                             <constraint firstItem="tQ5-s4-rat" firstAttribute="height" secondItem="QPD-1L-t4f" secondAttribute="height" id="yLK-8o-Wvz"/>
                             <constraint firstItem="i5h-pj-ACY" firstAttribute="width" secondItem="QPD-1L-t4f" secondAttribute="width" id="zwj-Tg-FWA"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Q0m-4e-H7t"/>
                                 <exclude reference="5lZ-kc-W2p"/>
                                 <exclude reference="kRa-Oe-hBj"/>
-                                <exclude reference="Q0m-4e-H7t"/>
                             </mask>
                         </variation>
                     </view>
                 </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <color key="backgroundColor" red="0.76507711410000001" green="0.78019404410000004" blue="0.79611134530000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="VnX-lY-IBQ" secondAttribute="trailing" id="NNX-Wh-JJd"/>
                     <constraint firstItem="VnX-lY-IBQ" firstAttribute="top" secondItem="KGx-pp-rJA" secondAttribute="top" id="fWw-EI-5Vx"/>
@@ -266,19 +283,20 @@
                 </constraints>
             </view>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <size key="freeformSize" width="271" height="208"/>
+            <size key="freeformSize" width="1118" height="500"/>
             <connections>
                 <outlet property="backspaceButton" destination="F9g-KA-qYZ" id="YuD-vK-KAn"/>
-                <outlet property="dotButton" destination="bVE-eJ-mQ5" id="F8R-GB-N7X"/>
+                <outlet property="dismissButton" destination="59c-wK-qJ0" id="DHf-4R-ev5"/>
+                <outlet property="doubleZeroButton" destination="hHv-zs-CCd" id="eGR-Gy-CoS"/>
                 <outlet property="keyboardView" destination="VnX-lY-IBQ" id="xI9-1A-UON"/>
-                <outlet property="returnButton" destination="59c-wK-qJ0" id="flx-o0-6o9"/>
-                <outlet property="zeroBigButton" destination="C21-lp-lrS" id="c1L-dI-00s"/>
-                <outlet property="zeroSmallButton" destination="hHv-zs-CCd" id="hOn-x2-EB0"/>
+                <outlet property="returnButton" destination="1wr-r0-BxO" id="m8f-lv-ayT"/>
+                <outlet property="zeroButton" destination="bVE-eJ-mQ5" id="4Hw-4R-wEY"/>
             </connections>
-            <point key="canvasLocation" x="396.5" y="594"/>
+            <point key="canvasLocation" x="396" y="594"/>
         </viewController>
     </objects>
     <resources>
-        <image name="BackspaceButton.png" width="32" height="32"/>
+        <image name="back_icon.png" width="52" height="35"/>
+        <image name="keyboard_down_icon.png" width="1146" height="673"/>
     </resources>
 </document>
